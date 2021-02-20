@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: edu.coursera.parallel.ReciprocalArraySumTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 25.317 sec <<< FAILURE! - in edu.coursera.parallel.ReciprocalArraySumTest
+testParManyTaskTwoHundredMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 2.401 sec  <<< ERROR!
+java.lang.IllegalArgumentException
+	at java.base/java.util.concurrent.ForkJoinPool.<init>(ForkJoinPool.java:2295)
+	at java.base/java.util.concurrent.ForkJoinPool.<init>(ForkJoinPool.java:2165)
+	at edu.coursera.parallel.ReciprocalArraySum.parManyTaskArraySum(ReciprocalArraySum.java:234)
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:151)
+
+testParManyTaskTwoMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 0.026 sec  <<< ERROR!
+java.lang.IllegalArgumentException
+	at java.base/java.util.concurrent.ForkJoinPool.<init>(ForkJoinPool.java:2295)
+	at java.base/java.util.concurrent.ForkJoinPool.<init>(ForkJoinPool.java:2165)
+	at edu.coursera.parallel.ReciprocalArraySum.parManyTaskArraySum(ReciprocalArraySum.java:234)
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoMillion(ReciprocalArraySumTest.java:140)
+
